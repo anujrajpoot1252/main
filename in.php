@@ -1,8 +1,8 @@
 <?php
-$servername = "127.0.0.1";
-$username = "coffee";
-$password = "coffee123";
-$dbname = "my";
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "customer";
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 
@@ -24,5 +24,6 @@ if (mysqli_num_rows($result) > 0) {
 } else {
     echo "Invalid username or password!";
 }
+
 
 ?>
